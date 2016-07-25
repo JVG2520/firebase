@@ -1,0 +1,49 @@
+Manifest-Version: 1.0
+Bnd-LastModified: 1469448496047
+Build-Jdk: 1.7.0_75
+Built-By: jeroen.vangeffelen
+Bundle-Activator: amplexor.core.slice.Activator
+Bundle-Description: Core bundle for fuzionz
+Bundle-ManifestVersion: 2
+Bundle-Name: fuzionz - Core
+Bundle-SymbolicName: app-core
+Bundle-Version: 1.0.0.SNAPSHOT
+Created-By: Apache Maven Bundle Plugin
+Export-Package: amplexor.core;version="1.0.0.SNAPSHOT",amplexor.core.fil
+ ters;version="1.0.0.SNAPSHOT";uses:="javax.servlet",amplexor.core.liste
+ ners;version="1.0.0.SNAPSHOT";uses:="org.osgi.service.event",amplexor.c
+ ore.models;version="1.0.0.SNAPSHOT";uses:="com.adobe.cq.sightly,com.cog
+ nifide.slice.mapper.annotation,com.google.inject,javax.annotation,javax
+ .inject,org.apache.sling.api.resource,org.apache.sling.models.annotatio
+ ns",amplexor.core.schedulers;version="1.0.0.SNAPSHOT",amplexor.core.ser
+ vlets;version="1.0.0.SNAPSHOT";uses:="javax.servlet,org.apache.sling.ap
+ i,org.apache.sling.api.servlets",amplexor.core.slice;version="1.0.0.SNA
+ PSHOT";uses:="org.osgi.framework"
+Import-Package: com.adobe.cq.sightly;version="[2.2,3)",com.cognifide.sli
+ ce.api.injector;version="[4.2,5)",com.cognifide.slice.commons;version="
+ [4.1,5)",com.cognifide.slice.cq.module;version="[1.2,2)",com.cognifide.
+ slice.mapper.annotation;version="[4.3,5)",com.day.cq.wcm.api;version="[
+ 1.2,2)",com.day.cq.wcm.api.designer;version="[5.7,6)",com.day.cq.wcm.co
+ mmons;version="[5.7,6)",com.google.inject;version="[1.3,2)",javax.annot
+ ation,javax.inject;version="[0.0,1)",javax.servlet,org.apache.sling.api
+ ;version="[2.3,3)",org.apache.sling.api.request;version="[2.4,3)",org.a
+ pache.sling.api.resource;version="[2.5,3)",org.apache.sling.api.servlet
+ s;version="[2.1,3)",org.apache.sling.commons.osgi;version="[2.2,3)",org
+ .apache.sling.models.annotations;version="[1.0,2)",org.apache.sling.set
+ tings;version="[1.3,2)",org.osgi.framework;version="[1.5,2)",org.osgi.s
+ ervice.event;version="[1.2,2)",org.slf4j;version="[1.5,2)"
+Provide-Capability: osgi.service;effective:=active;objectClass="javax.se
+ rvlet.Servlet";service.vendor=Adobe,osgi.service;effective:=active;obje
+ ctClass="javax.servlet.Filter";service.ranking=-700;sling.filter.scope=
+ REQUEST;service.vendor=Adobe,osgi.service;effective:=active;objectClass
+ ="org.osgi.service.event.EventHandler";event.topics="org/apache/sling/a
+ pi/resource/Resource/*";service.vendor=Adobe,osgi.service;effective:=ac
+ tive;objectClass="java.lang.Runnable";scheduler.expression="*/30 * * * 
+ * ?";scheduler.concurrent=false;service.vendor=Adobe
+Require-Capability: osgi.ee;filter:="(&(osgi.ee=JavaSE)(version=1.6))"
+Service-Component: OSGI-INF/amplexor.core.listeners.SimpleResourceListen
+ er.xml,OSGI-INF/amplexor.core.servlets.SimpleServlet.xml,OSGI-INF/ample
+ xor.core.filters.LoggingFilter.xml,OSGI-INF/amplexor.core.schedulers.Si
+ mpleScheduledTask.xml
+Sling-Model-Packages: amplexor.core
+Tool: Bnd-2.3.0.201405100607

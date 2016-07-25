@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?><metatype:MetaData xmlns:metatype="http://www.osgi.org/xmlns/metatype/v1.0.0" localization="OSGI-INF/metatype/amplexor.core.schedulers.SimpleScheduledTask">
+    <OCD id="amplexor.core.schedulers.SimpleScheduledTask" name="%amplexor.core.schedulers.SimpleScheduledTask.name" description="%amplexor.core.schedulers.SimpleScheduledTask.description">
+        <AD id="scheduler.expression" type="String" default="*/30\ *\ *\ *\ *\ ?" name="%amplexor.core.schedulers.SimpleScheduledTask.scheduler.expression.name" description="%amplexor.core.schedulers.SimpleScheduledTask.scheduler.expression.description"/>
+        <AD id="scheduler.concurrent" type="Boolean" default="false" name="%amplexor.core.schedulers.SimpleScheduledTask.scheduler.concurrent.name" description="%amplexor.core.schedulers.SimpleScheduledTask.scheduler.concurrent.description"/>
+        <AD id="myParameter" type="String" name="%amplexor.core.schedulers.SimpleScheduledTask.myParameter.name" description="%amplexor.core.schedulers.SimpleScheduledTask.myParameter.description"/>
+    </OCD>
+    <Designate pid="amplexor.core.schedulers.SimpleScheduledTask">
+        <Object ocdref="amplexor.core.schedulers.SimpleScheduledTask"/>
+    </Designate>
+</metatype:MetaData>

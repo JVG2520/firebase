@@ -1,0 +1,8 @@
+amplexor/core/servlets/SimpleServlet.class
+amplexor/core/slice/Activator.class
+amplexor/core/filters/LoggingFilter.class
+amplexor/core/models/HelloWorldModel.class
+amplexor/core/package-info.class
+amplexor/core/models/Head.class
+amplexor/core/listeners/SimpleResourceListener.class
+amplexor/core/schedulers/SimpleScheduledTask.class
